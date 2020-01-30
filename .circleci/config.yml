@@ -9,7 +9,7 @@ jobs:
       # specify the version you desire here - obraz dockerowy zostanie postawiony w tej wersji, żeby wykonywać testy
       - image: circleci/openjdk:8-jdk
         environment: #zmienne potrzebne do zintegrowania javy z bazą danych
-          JDBC_DATABASE_URL: jdbc:mysql://localhost:3306/ci-course?useSSL=false&serverTimezone=UTC
+          JDBC_DATABASE_URL: jdbc:postgresql://localhost:5432/ci-course?useSSL=false&serverTimezone=UTC
           JDBC_DATABASE_USERNAME: root
           JDBC_DATABASE_PASSWORD: root
 
